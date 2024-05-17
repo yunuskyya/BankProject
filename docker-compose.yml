@@ -4,7 +4,7 @@ services:
   db:
     image: mysql
     restart: always
-    container_name: jwt_token
+    container_name: banka
     environment:
       MYSQL_ROOT_PASSWORD: 12345
       MYSQL_DATABASE: banka

@@ -24,7 +24,7 @@ public class JwtService {
         Map<String, Object> claims = new HashMap<>(); /* token içerisine eklemek istediğimiz bilgileri map olarak tutuyoruz */
         return createToken(claims, username); /* token oluşturmak için createToken metodunu çağırıyoruz */
     }
-    public boolean validateToken(String token, UserDetails userDetails) { /* tokeni doğruluyoruz */
+    public boolean validateToken(String token,UserDetails  userDetails) { /* tokeni doğruluyoruz */
         String username = extractUser(token); /* token içerisindeki kullanıcı adını alıyoruz */
         Date expirationDate = extractExpiration(token); /* tokenin geçerlilik süresini alıyoruz */
         return userDetails.getUsername().equals(username) && !expirationDate.before(new Date());/* tokenin geçerlilik süresi dolmadıysa ve tokenin sahibi doğruysa true döndürüyoruz */

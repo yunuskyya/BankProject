@@ -2,17 +2,18 @@ package com.yunuskaya.banka.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.Id;
+
 
 import java.math.BigDecimal;
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
 @Table(name = "accounts")
 public class Account {
-    @jakarta.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -26,5 +27,4 @@ public class Account {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-
 }

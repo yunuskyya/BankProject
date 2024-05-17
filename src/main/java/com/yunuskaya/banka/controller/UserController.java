@@ -33,7 +33,7 @@ public class UserController {
 
     @GetMapping("/welcome")
     public String welcome() {
-        return "Hello World!";
+        return "Hello World! this is Banka Application";
     }
 
     @PostMapping("/addNewUser")
@@ -61,3 +61,4 @@ public class UserController {
         return "This is ADMIN!";
     }
 }
+
