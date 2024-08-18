@@ -2,16 +2,6 @@
 
 Bu proje, kullanıcıların banka hesaplarını yönetmelerini, para transferi yapmalarını ve kullanıcıların kimlik doğrulamasını sağlayan bir banka uygulamasıdır. Proje Spring Boot ve MySQL kullanılarak geliştirilmiştir.
 
-## İçindekiler
-
-- [Özellikler](#özellikler)
-- [Teknolojiler](#teknolojiler)
-- [Kurulum](#kurulum)
-- [Kullanım](#kullanım)
-- [API Referansı](#api-referansı)
-- [Yapılandırma](#yapılandırma)
-- [Katkıda Bulunma](#katkıda-bulunma)
-- [Lisans](#lisans)
 
 ## Özellikler
 
